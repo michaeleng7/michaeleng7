@@ -42,12 +42,14 @@ Engenheiro de Computação focado no desenvolvimento de APIs de alta performance
 
 ---
 
-### 📊 Estatísticas
+### ⚙️ Engenharia & Práticas de Desenvolvimento
 
-<div align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=michaeleng7&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub" />
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=michaeleng7&layout=compact&theme=tokyonight" alt="Linguagens mais usadas" />
-</div>
+| Domínio | Foco e Aplicação Prática |
+| :--- | :--- |
+| **CI/CD & Governança** | Pipelines automatizados, revisões de código via Gerrit/Git, linters e regras estáticas customizadas. |
+| **Sistemas Distribuídos & IA** | Arquiteturas RAG, orquestração de LLMs locais/cloud, bancos vetoriais e segurança contra Prompt Injection. |
+| **Sistemas Críticos & IoT** | Sistemas de tempo real com FreeRTOS, multitarefa, barramentos de comunicação e visão computacional (YOLO). |
+| **Qualidade & Resiliência** | Testes automatizados (Pytest), degradação graciosa, retries configuráveis e monitoramento de infraestrutura. |
 
 ---
 
