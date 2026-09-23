@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- Ubuntu Gnome Terminal -->
+<!-- Terminal Estilo Ubuntu / Linux GNOME -->
 <img src="./assets/terminal.svg" width="820" alt="Ubuntu Terminal - Michael Alves Ribeiro" />
 
 </div>
@@ -178,6 +178,13 @@
   <a href="https://github.com/michaeleng7" target="_blank">
     <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=michaeleng7&theme=github_dark&custom_title=My%20Programming%20Languages" alt="My Programming Languages" />
   </a>
+</p>
+
+<br/>
+
+<!-- Profile Views Counter -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=michaeleng7&color=4af626&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
 </p>
 
 </div>
