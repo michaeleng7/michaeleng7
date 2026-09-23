@@ -1,61 +1,7 @@
 <div align="center">
 
-<!-- Window Terminal Style Linux gnome -->
-<table style="border-collapse: collapse; border: 1px solid #1e0416; border-radius: 6px; background-color: #300a24; width: 100%; max-width: 820px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
-  <!-- Bar of Title -->
-  <tr style="background-color: #3c3b37; border-bottom: 1px solid #2b2b2b;">
-    <td style="padding: 7px 14px; font-family: 'Ubuntu', 'DejaVu Sans', sans-serif; font-size: 13px; color: #dfdbd2;">
-      <table style="width: 100%; border: none; background: transparent; border-collapse: collapse; margin: 0; padding: 0;">
-        <tr style="border: none; background: transparent;">
-          <td style="border: none; text-align: left; padding: 0; color: #dfdbd2; font-weight: bold;">
-            michaeleng7@devops: ~
-          </td>
-          <!-- Controls of Ubuntu Window -->
-          <td style="border: none; text-align: right; padding: 0;">
-            <span style="display: inline-block; width: 16px; height: 16px; line-height: 14px; text-align: center; color: #dfdbd2; font-size: 14px; margin-left: 6px;">&#8722;</span>
-            <span style="display: inline-block; width: 16px; height: 16px; line-height: 14px; text-align: center; color: #dfdbd2; font-size: 10px; margin-left: 6px;">&#9634;</span>
-            <span style="display: inline-block; width: 16px; height: 16px; line-height: 14px; text-align: center; color: #ffffff; font-size: 10px; margin-left: 6px; font-weight: bold;">&#10005;</span>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  
-  <!-- Internal terminal content -->
-  <tr>
-    <td style="padding: 16px 20px; text-align: left; background-color: #300a24;">
-
-<!-- Line of Command with Animation (URL Encoded) -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Ubuntu+Mono&size=15&duration=2500&pause=1000&color=4af626&background=300a2400&center=false&vCenter=true&width=750&height=40&lines=michaeleng7%40devops%3A~%24+whoami+--verbose" alt="Prompt Animado" />
-</a>
-
-```text
-┌── Profile ─────────────────────────────────────────────────────────┐
-│  • Name:        Michael Alves Ribeiro                              │
-│  • Role:        Computer Engineer & DevOps Developer               │
-│  • Location:    Caucaia, CE - Brazil                               │
-│  • Core:        Python · C/C++ · Bash · Linux                      │
-└────────────────────────────────────────────────────────────────────┘
-
-┌── Engineering & Specializations ───────────────────────────────────┐
-│  • CI/CD & Cloud:     Jenkins · Gerrit · Docker · Ansible · Git    │
-│  • Backend & AI:      FastAPI · RAG · LlamaIndex · LangChain       │
-│  • Embedded & IoT:    FreeRTOS · RP2040 · ESP32 · MQTT · YOLO      │
-│  • Databases & Data:  PostgreSQL · MongoDB · Pandas · Matplotlib   │
-└────────────────────────────────────────────────────────────────────┘
-
-┌── System Status ───────────────────────────────────────────────────┐
-│  [OK] Continuous Deployment Pipelines: OPTIMIZED                   │
-│  [OK] Microservices & APIs: ACTIVE                                 │
-│  [OK] Real-Time Firmware & Sensors: STABLE                         │
-└────────────────────────────────────────────────────────────────────┘
-
-michaeleng7@devops:~$ ./open_session.sh --links
-```
-</td>
-</tr>
-</table>
+<!-- Ubuntu Gnome Terminal -->
+<img src="./assets/terminal.svg" width="820" alt="Ubuntu Terminal - Michael Alves Ribeiro" />
 
 </div>
 
