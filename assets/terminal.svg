@@ -10,7 +10,6 @@
         font-size: 13.5px;
         fill: #dfdbd2;
         letter-spacing: 0px;
-        white-space: pre;
       }
       .prompt { fill: #4af626; font-weight: bold; }
       .cmd { fill: #ffffff; }
@@ -24,6 +23,7 @@
   </defs>
 
   <g clip-path="url(#terminal-clip)">
+    <!-- Fundo roxo Ubuntu -->
     <rect width="820" height="510" class="bg" />
 
     <!-- Barra de Título do Ubuntu GNOME -->
@@ -37,30 +37,32 @@
 
     <line x1="0" y1="36" x2="820" y2="36" stroke="#252422" stroke-width="1" />
 
-    <!-- Conteúdo do Terminal -->
-    <text x="24" y="66" class="terminal-code" xml:space="preserve"><tspan class="prompt">michaeleng7@devops:~$ </tspan><tspan class="cmd">whoami --verbose</tspan></text>
+    <!-- Prompt 1: whoami -->
+    <text x="24" y="68" class="terminal-code" xml:space="preserve"><tspan class="prompt">michaeleng7@devops:~$ </tspan><tspan class="cmd">whoami --verbose</tspan></text>
 
-    <text x="24" y="98" class="terminal-code" xml:space="preserve">
-<tspan x="24" dy="0">┌── Profile ─────────────────────────────────────────────────────────┐</tspan>
-<tspan x="24" dy="19">│  • Name:        Michael Alves Ribeiro                              │</tspan>
-<tspan x="24" dy="19">│  • Role:        Computer Engineer &amp; DevOps Developer               │</tspan>
-<tspan x="24" dy="19">│  • Location:    Caucaia, CE - Brazil                               │</tspan>
-<tspan x="24" dy="19">│  • Core:        Python · C/C++ · Bash · Linux                      │</tspan>
-<tspan x="24" dy="19">└────────────────────────────────────────────────────────────────────┘</tspan>
-<tspan x="24" dy="28">┌── Engineering &amp; Specializations ───────────────────────────────────┐</tspan>
-<tspan x="24" dy="19">│  • CI/CD &amp; Cloud:     Jenkins · Gerrit · Docker · Ansible · Git    │</tspan>
-<tspan x="24" dy="19">│  • Backend &amp; AI:      FastAPI · RAG · LlamaIndex · LangChain       │</tspan>
-<tspan x="24" dy="19">│  • Embedded &amp; IoT:    FreeRTOS · RP2040 · ESP32 · MQTT · YOLO      │</tspan>
-<tspan x="24" dy="19">│  • Databases &amp; Data:  PostgreSQL · MongoDB · Pandas · Matplotlib   │</tspan>
-<tspan x="24" dy="19">└────────────────────────────────────────────────────────────────────┘</tspan>
-<tspan x="24" dy="28">┌── System Status ───────────────────────────────────────────────────┐</tspan>
-<tspan x="24" dy="19">│  <tspan class="green">[OK]</tspan> Continuous Deployment Pipelines: OPTIMIZED                   │</tspan>
-<tspan x="24" dy="19">│  <tspan class="green">[OK]</tspan> Microservices &amp; APIs: ACTIVE                                 │</tspan>
-<tspan x="24" dy="19">│  <tspan class="green">[OK]</tspan> Real-Time Firmware &amp; Sensors: STABLE                         │</tspan>
-<tspan x="24" dy="19">└────────────────────────────────────────────────────────────────────┘</tspan>
-<tspan x="24" dy="32" class="prompt">michaeleng7@devops:~$ </tspan><tspan class="cmd">./open_session.sh --links</tspan><tspan class="prompt cursor"> _</tspan>
-    </text>
+    <!-- Caixas ASCII 1, 2 e 3 com Coordenadas Absolutas Imutáveis -->
+    <text x="24" y="98" class="terminal-code" xml:space="preserve">┌── Profile ─────────────────────────────────────────────────────────┐</text>
+    <text x="24" y="117" class="terminal-code" xml:space="preserve">│  • Name:        Michael Alves Ribeiro                              │</text>
+    <text x="24" y="136" class="terminal-code" xml:space="preserve">│  • Role:        Computer Engineer &amp; DevOps Developer               │</text>
+    <text x="24" y="155" class="terminal-code" xml:space="preserve">│  • Location:    Caucaia, CE - Brazil                               │</text>
+    <text x="24" y="174" class="terminal-code" xml:space="preserve">│  • Core:        Python · C/C++ · Bash · Linux                      │</text>
+    <text x="24" y="193" class="terminal-code" xml:space="preserve">└────────────────────────────────────────────────────────────────────┘</text>
+    <text x="24" y="221" class="terminal-code" xml:space="preserve">┌── Engineering &amp; Specializations ───────────────────────────────────┐</text>
+    <text x="24" y="240" class="terminal-code" xml:space="preserve">│  • CI/CD &amp; Cloud:     Jenkins · Gerrit · Docker · Ansible · Git    │</text>
+    <text x="24" y="259" class="terminal-code" xml:space="preserve">│  • Backend &amp; AI:      FastAPI · RAG · LlamaIndex · LangChain       │</text>
+    <text x="24" y="278" class="terminal-code" xml:space="preserve">│  • Embedded &amp; IoT:    FreeRTOS · RP2040 · ESP32 · MQTT · YOLO      │</text>
+    <text x="24" y="297" class="terminal-code" xml:space="preserve">│  • Databases &amp; Data:  PostgreSQL · MongoDB · Pandas · Matplotlib   │</text>
+    <text x="24" y="316" class="terminal-code" xml:space="preserve">└────────────────────────────────────────────────────────────────────┘</text>
+    <text x="24" y="344" class="terminal-code" xml:space="preserve">┌── System Status ───────────────────────────────────────────────────┐</text>
+    <text x="24" y="363" class="terminal-code" xml:space="preserve">│  <tspan class="green">[OK]</tspan> Continuous Deployment Pipelines: OPTIMIZED                   │</text>
+    <text x="24" y="382" class="terminal-code" xml:space="preserve">│  <tspan class="green">[OK]</tspan> Microservices &amp; APIs: ACTIVE                                 │</text>
+    <text x="24" y="401" class="terminal-code" xml:space="preserve">│  <tspan class="green">[OK]</tspan> Real-Time Firmware &amp; Sensors: STABLE                         │</text>
+    <text x="24" y="420" class="terminal-code" xml:space="preserve">└────────────────────────────────────────────────────────────────────┘</text>
+
+    <!-- Prompt 2 Final com Cursor Piscando -->
+    <text x="24" y="460" class="terminal-code" xml:space="preserve"><tspan class="prompt">michaeleng7@devops:~$ </tspan><tspan class="cmd">./open_session.sh --links</tspan><tspan class="prompt cursor"> _</tspan></text>
   </g>
 
+  <!-- Borda sutil externa da janela -->
   <rect width="820" height="510" rx="8" fill="none" stroke="#1e0416" stroke-width="2" />
 </svg>
