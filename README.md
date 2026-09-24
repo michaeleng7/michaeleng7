@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Terminal Estilo Ubuntu / Linux GNOME -->
-<img src="./assets/terminal.svg" width="820" alt="Ubuntu Terminal - Michael Alves Ribeiro" />
+<img src="./assets/terminal-cyberpunk.svg" width="820" alt="Ubuntu Terminal - Michael Alves Ribeiro" />
 
 </div>
 
@@ -176,7 +176,7 @@
 
 <p align="center">
   <a href="https://github.com/michaeleng7" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=michaeleng7&theme=github_dark&custom_title=My%20Programming%20Languages" alt="My Programming Languages" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=michaeleng7&title_color=00f3ff&text_color=e0e0e0&bg_color=07090e&border_color=00f3ff&custom_title=My%20Programming%20Languages" alt="My Programming Languages" />
   </a>
 </p>
 
@@ -184,7 +184,7 @@
 
 <!-- Profile Views Counter -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=michaeleng7&color=4af626&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=michaeleng7&color=00f3ff&style=for-the-badge&label=NET%20ACCESS" alt="Profile Views" />
 </p>
 
 </div>

@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 530" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #07090e; }
+      .header-bg { fill: #0d111a; }
+      .cyan { fill: #00f3ff; }
+      .pink { fill: #ff0055; }
+      .yellow { fill: #fcee0a; }
+      .green { fill: #00ff75; }
+      .dim { fill: #798299; }
+      .white { fill: #f0f6fc; }
+      .title { font-family: 'Share Tech Mono', 'Ubuntu Mono', 'Consolas', monospace; font-size: 13px; font-weight: bold; letter-spacing: 1.5px; }
+      .mono { font-family: 'Fira Code', 'Ubuntu Mono', 'Cascadia Mono', 'DejaVu Sans Mono', 'Consolas', monospace; font-size: 13.5px; }
+      .terminal-code {
+        font-family: 'Ubuntu Mono', 'Cascadia Mono', 'DejaVu Sans Mono', 'Fira Code', 'Consolas', monospace;
+        font-size: 13px;
+        letter-spacing: 0px;
+        white-space: pre;
+      }
+      .glow-cyan { filter: url(#glow-cyan); }
+      .glow-pink { filter: url(#glow-pink); }
+      .glow-white { filter: url(#glow-white); }
+      .cursor { animation: blink 1s step-start infinite; }
+      @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+      .scanline { fill: none; stroke: rgba(0, 243, 255, 0.035); stroke-width: 1.5; }
+    </style>
+
+    <!-- Filtro Neon Glow Ciano Intenso -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur1" />
+      <feGaussianBlur stdDeviation="1.5" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Filtro Neon Glow Rosa Intenso -->
+    <filter id="glow-pink" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur1" />
+      <feGaussianBlur stdDeviation="1.5" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Filtro Neon Glow Branco Suave para Comandos -->
+    <filter id="glow-white" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <clipPath id="cyber-clip">
+      <rect width="820" height="530" rx="10" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cyber-clip)">
+    <!-- Fundo Escuro Cibernético -->
+    <rect width="820" height="530" class="bg" />
+
+    <!-- Grid Cibernético de Alta Tecnologia no Background -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 243, 255, 0.03)" stroke-width="1" />
+      <circle cx="0" cy="0" r="1" fill="rgba(0, 243, 255, 0.1)" />
+    </pattern>
+    <rect width="820" height="530" fill="url(#cyber-grid)" />
+
+    <!-- Gradiente Radial Sci-Fi / Iluminação de Fundo -->
+    <radialGradient id="cyber-ambient" cx="50%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.06" />
+      <stop offset="65%" stop-color="#ff0055" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#07090e" stop-opacity="0" />
+    </radialGradient>
+    <rect width="820" height="530" fill="url(#cyber-ambient)" />
+
+    <!-- Scanlines de Monitor CRT / Holograma -->
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" class="scanline" />
+    </pattern>
+    <rect width="820" height="530" fill="url(#scanlines)" />
+
+    <!-- Barra de Título Cyberdeck -->
+    <rect width="820" height="38" class="header-bg" />
+    <path d="M0 38 L820 38" stroke="#00f3ff" stroke-width="1.5" opacity="0.6" />
+    
+    <!-- Detalhes do Topo -->
+    <rect x="16" y="15" width="8" height="8" fill="#ff0055" />
+    <text x="32" y="24" class="cyan title">CYBERDECK // MICHAEL_OS [ROOT_ACCESS]</text>
+    
+    <!-- Status HUD Topo Direita -->
+    <text x="615" y="24" class="dim title" font-size="11">NET_PULSE: <tspan class="green">99.8%</tspan>  //  LAT: <tspan class="cyan">4ms</tspan></text>
+    <text x="792" y="24" class="pink title" font-size="12" font-weight="bold">[×]</text>
+
+    <!-- Linhas de Circuito Sci-Fi decorativas na Barra de Título -->
+    <path d="M480 38 L500 38 L510 46 L580 46" stroke="#00f3ff" stroke-width="1" fill="none" opacity="0.3" />
+
+    <!-- Prompt 1: Netstat com Glow Intenso -->
+    <text x="24" y="68" class="mono">
+      <tspan class="cyan glow-cyan" font-weight="bold">michaeleng7@cyberdeck:~$ </tspan>
+      <tspan class="white glow-white">netstat --identity --verbose</tspan>
+    </text>
+
+    <!-- Caixas ASCII 1, 2 e 3 100% Alinhadas -->
+    <text x="24" y="98" class="terminal-code" xml:space="preserve">
+<tspan x="24" dy="0" class="cyan">┌── </tspan><tspan class="yellow">OPERATIVE PROFILE </tspan><tspan class="cyan">─────────────────────────────────────────────────┐</tspan>
+<tspan x="24" dy="19" class="cyan">│</tspan><tspan class="dim">  • Codename:     </tspan><tspan class="white">Michael Alves Ribeiro                               </tspan><tspan class="cyan">│</tspan>
+<tspan x="24" dy="19" class="cyan">│</tspan><tspan class="dim">  • Designation:  </tspan><tspan class="cyan">Computer Engineer &amp; DevOps Engineer                 </tspan><tspan class="cyan">│</tspan>
+<tspan x="24" dy="19" class="cyan">│</tspan><tspan class="dim">  • Coordinates:  </tspan><tspan class="white">Caucaia, CE - Brazil [Sector-BR]                    </tspan><tspan class="cyan">│</tspan>
+<tspan x="24" dy="19" class="cyan">│</tspan><tspan class="dim">  • Core Subsys:  </tspan><tspan class="pink">Python</tspan><tspan class="dim"> · </tspan><tspan class="pink">C/C++</tspan><tspan class="dim"> · </tspan><tspan class="pink">Bash</tspan><tspan class="dim"> · </tspan><tspan class="pink">Linux       </tspan><tspan class="white">                </tspan><tspan class="cyan">│</tspan>
+<tspan x="24" dy="19" class="cyan">└──────────────────────────────────────────────────────────────────────┘</tspan>
+<tspan x="24" dy="28" class="pink">┌── </tspan><tspan class="yellow">CYBERNETIC ARSENAL &amp; DEPLOYMENT </tspan><tspan class="pink">───────────────────────────────────┐</tspan>
+<tspan x="24" dy="19" class="pink">│</tspan><tspan class="dim">  • CI/CD &amp; Infra:   </tspan><tspan class="white">Jenkins · Gerrit · Docker · Ansible · Git        </tspan><tspan class="pink">│</tspan>
+<tspan x="24" dy="19" class="pink">│</tspan><tspan class="dim">  • Neural &amp; AI:     </tspan><tspan class="cyan">FastAPI · RAG · LlamaIndex · LangChain           </tspan><tspan class="pink">│</tspan>
+<tspan x="24" dy="19" class="pink">│</tspan><tspan class="dim">  • Edge &amp; Sensors:  </tspan><tspan class="green">FreeRTOS · RP2040 · ESP32 · MQTT · YOLO          </tspan><tspan class="pink">│</tspan>
+<tspan x="24" dy="19" class="pink">│</tspan><tspan class="dim">  • Matrix Storage:  </tspan><tspan class="white">PostgreSQL · MongoDB · Pandas · Matplotlib       </tspan><tspan class="pink">│</tspan>
+<tspan x="24" dy="19" class="pink">└──────────────────────────────────────────────────────────────────────┘</tspan>
+<tspan x="24" dy="28" class="cyan">┌── </tspan><tspan class="yellow">SYSTEM TELEMETRY &amp; VITALS </tspan><tspan class="cyan">─────────────────────────────────────────┐</tspan>
+<tspan x="24" dy="19" class="cyan">│</tspan><tspan class="green">  [ONLINE] </tspan><tspan class="dim">Deployment Pipelines : </tspan><tspan class="cyan">OPTIMIZED // ZERO LATENCY           </tspan><tspan class="cyan">│</tspan>
+<tspan x="24" dy="19" class="cyan">│</tspan><tspan class="green">  [ONLINE] </tspan><tspan class="dim">Microservices &amp; APIs : </tspan><tspan class="green">ACTIVE // HIGH RESILIENCE           </tspan><tspan class="cyan">│</tspan>
+<tspan x="24" dy="19" class="cyan">│</tspan><tspan class="green">  [ONLINE] </tspan><tspan class="dim">Sensors &amp; Real-Time  : </tspan><tspan class="pink">STABLE // STREAMING                 </tspan><tspan class="cyan">│</tspan>
+<tspan x="24" dy="19" class="cyan">└──────────────────────────────────────────────────────────────────────┘</tspan>
+    </text>
+
+    <!-- Prompt 2 Final com Glow e Cursor Neon -->
+    <text x="24" y="492" class="mono">
+      <tspan class="cyan glow-cyan" font-weight="bold">michaeleng7@cyberdeck:~$ </tspan>
+      <tspan class="white glow-white">./establish_link.sh --channels</tspan>
+      <tspan class="pink glow-pink cursor" font-weight="bold"> █</tspan>
+    </text>
+
+    <!-- Marca d'água técnica sutil no canto inferior -->
+    <text x="795" y="515" text-anchor="end" fill="rgba(0, 243, 255, 0.12)" font-family="'Share Tech Mono', monospace" font-size="9" letter-spacing="1.5">SYS_AUTH: VERIFIED // ARCH: x86_64 // NEURAL_LINK: ONLINE</text>
+  </g>
+
+  <!-- Borda Neon Futurista Externa com Cantos Arredondados -->
+  <rect width="820" height="530" rx="10" fill="none" stroke="#00f3ff" stroke-width="1.8" opacity="0.8" />
+
+  <!-- Marcadores de Canto Estilo HUD Cyberpunk -->
+  <path d="M0 25 L0 0 L25 0" stroke="#ff0055" stroke-width="3" fill="none" />
+  <path d="M795 0 L820 0 L820 25" stroke="#ff0055" stroke-width="3" fill="none" />
+  <path d="M0 505 L0 530 L25 530" stroke="#00f3ff" stroke-width="3" fill="none" />
+  <path d="M795 530 L820 530 L820 505" stroke="#00f3ff" stroke-width="3" fill="none" />
+
+  <!-- Ticks Centrais HUD -->
+  <line x1="410" y1="0" x2="410" y2="6" stroke="#00f3ff" stroke-width="2" />
+  <line x1="410" y1="524" x2="410" y2="530" stroke="#00f3ff" stroke-width="2" />
+</svg>
